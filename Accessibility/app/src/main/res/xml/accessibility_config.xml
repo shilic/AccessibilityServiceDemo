@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:canRequestTouchExplorationMode="true"
+    android:description="@string/description_in_xml"
+    android:settingsActivity="com.yufs.accessibility.MainActivity"
+    android:notificationTimeout="100" />
+
+<!--
+accessibilityEventTypes:可以接收的事件类型，例如界面变化、点击等。typeAllMask 接收所有，根据实际情况选择合适的类型，减少电量的消耗
+accessibilityFeedbackType：事件的反馈类型，暂时不知道用作啥
+canPerformGestures：是否支持手势
+canRetrieveWindowContent：是否允许读取窗口中的内容
+canRequestTouchExplorationMode：在这种模式下，被触摸的项目会被大声说出，用户界面可以被激活通过手势探索
+description：服务的描述文字
+settingsActivity：开启服务界面显示一个设置按钮，可以返回应用指定界面
+notificationTimeout：事件的发送间隔事件，单位毫秒
+-->
+
